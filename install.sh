@@ -16,15 +16,15 @@ source $POPMAKUB_ROOT/install/first-run-choices.sh
 source $POPMAKUB_ROOT/install/identification.sh
 
 # # Desktop software and tweaks will only be installed if we're running Gnome
-# if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
-#   # Ensure computer doesn't go to sleep or lock while installing
-#   gsettings set org.gnome.desktop.screensaver lock-enabled false
-#   gsettings set org.gnome.desktop.session idle-delay 0
+if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
+  # Ensure computer doesn't go to sleep or lock while installing
+  gsettings set org.gnome.desktop.screensaver lock-enabled false
+  gsettings set org.gnome.desktop.session idle-delay 0
 
-#   echo "Installing terminal and desktop tools..."
+  echo "Installing terminal and desktop tools..."
 
 #   # Install terminal tools
-#   source $POPMAKUB_ROOT/install/terminal.sh
+  source $POPMAKUB_ROOT/install/terminal.sh
 
 #   # Install desktop tools and tweaks
 #   source $POPMAKUB_ROOT/install/desktop.sh
