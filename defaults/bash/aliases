@@ -25,3 +25,6 @@ alias lzd='lazydocker'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
+
+# pop
+alias reset_audio='sudo alsa force-reload'
