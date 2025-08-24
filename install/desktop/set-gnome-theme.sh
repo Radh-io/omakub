@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source ~/.local/share/omakub/themes/tokyo-night/gnome.sh
-source ~/.local/share/omakub/themes/tokyo-night/tophat.sh
+source $POPMAKUB_ROOT/themes/tokyo-night/gnome.sh
+source $POPMAKUB_ROOT/themes/tokyo-night/tophat.sh
